@@ -20,16 +20,10 @@ app
             }
         return c.json({
             message: 'Hello Next.js!',
+            userId: auth.userId,
         })
     })
-    .get(
-        '/hello/:test', 
-        (c) => {
-        return c.json({
-            message: 'Hello World',
-        })
-
-    })
+    
     .post(
         '/create/:postId',
         zValidator('json', z.object({
