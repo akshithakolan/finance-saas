@@ -1,4 +1,5 @@
-import { HeaderLogo } from "./header-logo"
+import { Navigation } from "@/components/navigation"
+import { HeaderLogo } from "@/components/header-logo"
 
 export const Header = () => {
     return (
@@ -6,7 +7,8 @@ export const Header = () => {
             <div className="max-w-screen-2xl mx-auto">
                 <div className="w-full flex items-center justify-between mb-14"> 
                   <div className="flex items-center lg:gap-x-16">
-                    <HeaderLogo/>
+                    <HeaderLogo />
+                    <Navigation/>
                     </div>  
                 </div>
             </div> 
